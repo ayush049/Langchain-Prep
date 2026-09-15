@@ -15,7 +15,7 @@ prompt2 = PromptTemplate(
     input_variables = ['text']
 )
 
-model = ChatGroq(model="qwen/qwen3.6-27b", max_tokens=250)
+model = ChatGroq(model="qwen/qwen3.8-27b", max_tokens=250)
 
 parser = StrOutputParser()
 

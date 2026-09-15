@@ -10,7 +10,7 @@ prompt = PromptTemplate(
     input_variables=['topic']
 )
 
-model = ChatGroq(model="qwen/qwen3.6-27b", max_tokens=250)
+model = ChatGroq(model="qwen/qwen3.8-27b", max_tokens=250)
 parser = StrOutputParser()
 chain = prompt | model | parser
 result = chain.invoke({'topic': 'langchain'})

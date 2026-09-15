@@ -7,7 +7,7 @@ from langchain_core.runnables import RunnableParallel
 
 load_dotenv()
 
-model1 = ChatGroq(model="qwen/qwen3.6-27b", max_tokens=200)
+model1 = ChatGroq(model="qwen/qwen3.8-27b", max_tokens=200)
 
 model2 = ChatGoogleGenerativeAI(model="gemini-3.6-flash")
 
